@@ -1,0 +1,94 @@
+/*5*features*/
+/*--Особенности--*/
+
+.visually-hidden {
+  /* Скрыли h2 на главной и в портфолио */
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.section-features {
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: -15px;
+    }
+  }
+}
+
+.section-features {
+  &__item {
+    /*width: 270px;*/
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 8 * 15px) / 4);
+      margin: 15px;
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.section-features {
+  &__item {
+    &:not(:nth-child(4)) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.section-features {
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+  }
+}
+
+.section-features {
+  &__text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $tel-color;
+  }
+}
+
+.section-features {
+  &__icon-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background: $button-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
