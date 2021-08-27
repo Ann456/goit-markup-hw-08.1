@@ -1190,55 +1190,58 @@ a {
 
 /*8clients*/
 /*--Постоянные клиенты--*/
-.section-clients__list {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 50px 0 0 0;
-  padding: 0;
+/*
+.section-clients {
+  &__list {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+
+    padding: 0;
+  }
+}
+/*
+.section-clients {
+  &__thumb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid $social-links;
+    border-radius: 4px;
+
+    transition: border 250ms $timing-function;
+  }
 }
 
-.section-clients__thumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.section-clients {
+  &__thumb {
+    &:hover,
+    &:focus {
+      border: 1px solid $logo-color;
+    }
+  }
 }
 
-.section-clients__thumb:hover, .section-clients__thumb:focus {
-  border: 1px solid #2196f3;
+.section-clients {
+  &__thumb svg {
+    fill: $social-links;
+    transition: fill 250ms $timing-function;
+  }
 }
 
-.section-clients__thumb svg {
-  fill: #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.section-clients__thumb:focus svg,
-.section-clients__thumb:hover svg {
-  fill: #2196f3;
-}
-
+.section-clients {
+  &__thumb:focus svg,
+  &__thumb:hover svg {
+    fill: $logo-color;
+  }
+}*/
 /*9portfolio*/
 /*--Портфолио--*/
 .filters {

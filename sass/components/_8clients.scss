@@ -1,8 +1,10 @@
 /*8clients*/
 /*--Постоянные клиенты--*/
+/*
 .section-clients {
   &__list {
     list-style: none;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -11,7 +13,7 @@
     padding: 0;
   }
 }
-
+/*
 .section-clients {
   &__thumb {
     display: flex;
@@ -49,4 +51,4 @@
   &__thumb:hover svg {
     fill: $logo-color;
   }
-}
+}*/
