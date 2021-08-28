@@ -8,7 +8,21 @@
 }
 
 .container-footer {
-  display: flex;
+  list-style: none;
+  /*display: flex;*/
+}
+/*
+.footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 /*--Logo--*/
@@ -157,11 +171,12 @@
   }
 }
 
+/*
 .form {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 .form {
   &__input {
@@ -208,14 +223,14 @@
 
 .form {
   &__button-footer {
-    display: flex;
+    /*display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 29px;
 
-    margin-left: 12px;
+    margin-left: 12px;*/
 
     font-family: Roboto;
     font-style: normal;
