@@ -13,15 +13,53 @@
   margin-right: auto;
   outline: 1px solid $logo-studio;
   background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
-    url("../images/Img-16.jpg");
+    url("../images/fon-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+      url("../images/fon-mobile2x.jpg");
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+      url("../images/fon-tablet.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          $hero-gradient,
+          $hero-gradient
+        ),
+        url("../images/fon-tablet2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+      url("../images/fon-desk.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          $hero-gradient,
+          $hero-gradient
+        ),
+        url("../images/fon-desk2x.jpg");
+    }
+  }
 }
 
 .section-hero {
   &__title {
-    margin-bottom: 30px;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.06em;
@@ -34,6 +72,7 @@
     }
 
     @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
       font-size: 44px;
       line-height: 1.4;
     }
