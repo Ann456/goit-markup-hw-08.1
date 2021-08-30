@@ -942,8 +942,7 @@ a {
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
+.menu-toggle:hover, .menu-toggle:focus {
   color: #2196f3;
 }
 
@@ -991,13 +990,8 @@ a {
   padding: 0;
 }
 
-.mobile-nav__link:hover,
-.mobile-nav__link:focus {
+.mobile-nav__link:hover, .mobile-nav__link:focus {
   text-decoration: underline;
-  color: #2196f3;
-}
-
-.mobile-nav__link--current {
   color: #2196f3;
 }
 
@@ -1012,6 +1006,10 @@ a {
 
 .mobile-nav__item:last-child {
   margin-bottom: 302px;
+}
+
+.mobile-nav__link--current {
+  color: #2196f3;
 }
 
 .mobile-header-tel-email__link--tel {
