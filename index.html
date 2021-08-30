@@ -292,7 +292,14 @@
                 <ul class="section-team__list">
                     <!--team card 1-->
                     <li class="section-team__item">
-                        <img src="./images/img-team1.jpg" alt="Игорь Демьяненко, Product Designer" width="270">
+                        <img srcset="
+                                  ./images/img-team1-480.jpg 480w,
+                                  ./images/img-team1-768.jpg 768w"
+                             src="./images/img-team1-480.jpg"
+                             alt="Игорь Демьяненко, Product Designer" 
+                             width="270"
+                             sizes="(min-width: 768px) 100vw, (min-width: 480px) 50vw, 100vw"
+                        >
                         <div class="section-team__box">
                             <h3 class="section-team__box-title">Игорь Демьяненко</h3>
                             <p class="section-team__box-text">Product Designer</p>
@@ -333,7 +340,14 @@
 
                     <!--team card 2-->
                     <li class="section-team__item">
-                        <img src="./images/img-team2.jpg" alt="Ольга Репина, Frontend Developer" width="270">
+                        <img 
+                            srcset="
+                                  ./images/img-team2-480.jpg 1x,
+                                  ./images/img-team2-768.jpg 2x"
+                            src="./images/img-team2-480.jpg"
+                            alt="Ольга Репина, Frontend Developer"
+                            width="270"
+                        >
                         <div class="section-team__box">
                             <h3 class="section-team__box-title">Ольга Репина</h3>
                             <p class="section-team__box-text">Frontend Developer</p>
@@ -373,7 +387,14 @@
                     </li>
                     <!--team card 3-->
                     <li class="section-team__item">
-                        <img src="./images/img-team3.jpg" alt="Николай Тарасов, Marketing" width="270">
+                        <img 
+                            srcset="
+                                  ./images/img-team3-480.jpg 1x,
+                                  ./images/img-team3-768.jpg 2x"
+                            src="./images/img-team3-480.jpg"
+                            alt="Николай Тарасов, Marketing"
+                            width="270"
+                        >
                         <div class="section-team__box">
                             <h3 class="section-team__box-title">Николай Тарасов</h3>
                             <p class="section-team__box-text">Marketing</p>
@@ -413,7 +434,14 @@
                     </li>
                     <!--team card 4-->
                     <li class="section-team__item">
-                        <img src="./images/img-team4.jpg" alt="Михаил Ермаков, UI Designer" width="270">
+                        <img 
+                            srcset="
+                                  ./images/img-team4-480.jpg 1x,
+                                  ./images/img-team4-768.jpg 2x"
+                            src="./images/img-team4-480.jpg"
+                            alt="Михаил Ермаков, UI Designer"
+                            width="270"
+                        >
                         <div class="section-team__box">
                             <h3 class="section-team__box-title">Михаил Ермаков</h3>
                             <p class="section-team__box-text">UI Designer</p>
