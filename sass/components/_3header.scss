@@ -3,7 +3,6 @@
 
 .section-header {
   position: relative;
-
   border: 1px solid $header-border;
 }
 
@@ -11,7 +10,15 @@
   &__container {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+    }
   }
+}
+
+.main-menu {
+  display: flex;
 }
 
 .menu {
@@ -37,11 +44,23 @@
 
 .menu-nav {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 93px;
+  /*margin-left: 93px;*/
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
+  padding: 0;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .menu-nav {
@@ -100,12 +119,27 @@
 }
 
 .header-tel-email {
+  list-style: none;
   display: flex;
   align-items: baseline;
   margin-left: auto;
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
+  padding: 0;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 150px;
+  }
 }
 
 .header-tel-email {
@@ -127,9 +161,6 @@
     display: block;
     align-items: center;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     color: $tel-color;
 
     font-weight: 500;
@@ -139,12 +170,19 @@
 
     transition: color 250ms $timing-function;
     text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 }
 
 .header-tel-email {
   &__item + &__item {
-    margin-left: 50px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 50px;
+    }
   }
 }
 

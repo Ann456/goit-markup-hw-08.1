@@ -7,8 +7,8 @@
 
 .section-team {
   &__list {
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
     padding: 50px 0 0 0;
     margin: 0;
     list-style: none;
@@ -91,16 +91,32 @@
 .social-links {
   &__list {
     display: flex;
-    justify-content: space-between;
-    margin: 16px 32px 30px 32px;
+    justify-content: center;
+    /*justify-content: space-between;
+    margin: 16px 32px 30px 32px;*/
+    margin-top: 16px;
+    margin-bottom: 30px;
     list-style: none;
     padding: 0;
   }
 }
 
 .social-links {
+  &__item {
+    &:not(:nth-last-child(4)) {
+      padding-left: 10px;
+    }
+  }
+}
+
+.section-team__item {
+  margin: 10px;
+}
+
+.social-links {
   &__icon-thumb {
     display: flex;
+    justify-content: center;
     padding: 12px;
     width: 44;
     height: 44;

@@ -9,19 +9,11 @@
 
 .container-footer {
   list-style: none;
-  /*display: flex;*/
-}
-/*
-.footer {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-  }
+  text-align: center;
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-wrap: nowrap;
+    text-align: left;
   }
 }
 
@@ -91,7 +83,9 @@
 /*--Social links--*/
 .join {
   margin-top: 12px;
-  margin-left: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .join {
@@ -111,12 +105,6 @@
 }
 
 .social-links {
-  &__list--dark {
-    margin: 0;
-  }
-}
-
-.social-links {
   &__item {
     &:not(:nth-last-child(4)) {
       padding-left: 10px;
@@ -126,6 +114,8 @@
 
 .social-links {
   &__icon-thumb--dark {
+    transition: background 250ms $timing-function, fill 250ms $timing-function;
+
     fill: $footer-logo-color;
     background: rgba(255, 255, 255, 0.1);
     transition: background 250ms $timing-function;
@@ -140,19 +130,23 @@
     }
   }
 }
-
+/*
 .join {
   .social-links {
     &:not(:nth-child(4)) {
-      margin-right: 10px;
+      @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+      }
     }
   }
-}
+}*/
 
 /*e-mail input*/
 .footer-form {
   margin-top: 12px;
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .footer-form {
@@ -171,16 +165,29 @@
   }
 }
 
-/*
 .form {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}*/
+}
 
 .form {
   &__input {
-    width: 358px;
+    @media screen and (max-width: 767px) {
+      width: 450px;
+      margin-bottom: 20px;
+    }
+    /*width: 358px;*/
+    @media screen and (min-width: 767px) {
+      padding-right: 387px;
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-right: 32px;
+      margin-bottom: 0;
+    }
+
     height: 50px;
 
     padding-top: 15px;
@@ -223,15 +230,21 @@
 
 .form {
   &__button-footer {
-    /*display: flex;
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+    /*margin-top: 20px;*/
     padding-bottom: 10px;
     padding-left: 29px;
-
-    margin-left: 12px;*/
-
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
