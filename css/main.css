@@ -803,6 +803,9 @@ a {
 
 @media screen and (max-width: 1199px) {
   .header-tel-email {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -884,15 +887,12 @@ a {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 @media (min-width: 768px) {
   .menu-container {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    display: none;
   }
 }
 
@@ -947,7 +947,20 @@ a {
   color: #2196f3;
 }
 
-/* mobile-menu */
+/* menu-container__mobile */
+.menu-container__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .mobile-header-tel-email,
 .mobile-nav {
   display: -webkit-box;
@@ -1001,7 +1014,7 @@ a {
   margin-bottom: 302px;
 }
 
-.header-tel-email__link--tel {
+.mobile-header-tel-email__link--tel {
   font-family: "Roboto", ‘Raleway’ sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1013,7 +1026,7 @@ a {
   margin-bottom: 32px;
 }
 
-.header-tel-email__link--email {
+.mobile-header-tel-email__link--email {
   font-family: "Roboto", ‘Raleway’ sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1031,6 +1044,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
+  margin: 0 0 0 40px;
 }
 
 .mobile-social-links__item:not(:last-child) {
