@@ -40,14 +40,18 @@
   transform: translate(-50%, -50%) scale(0.9);
   transition: transform 250ms $timing-function;
 
-  @media (min-width: 600px) {
+  @media screen and(max-width: 1199px) {
+    max-width: 450px;
+  }
+  /*
+  @media (min-width: 1200px) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 500px;
+    max-width: 450px;
     width: 100%;
-  }
+  }*/
 }
 
 .modal {
@@ -173,6 +177,10 @@
     letter-spacing: 0.01em;
 
     color: $tel-color;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+    }
   }
 }
 
