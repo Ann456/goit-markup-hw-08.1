@@ -4,9 +4,7 @@
 .section-header {
   position: relative;
   border: 1px solid $header-border;
-}
 
-.section-header {
   &__container {
     display: flex;
     align-items: center;
@@ -63,9 +61,7 @@
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
-}
 
-.menu-nav {
   &__link {
     display: block;
     padding-top: 32px;
@@ -83,29 +79,18 @@
 
     text-decoration: none;
   }
-}
 
-.menu-nav {
+  &__link--current {
+    color: $logo-color;
+  }
+
   &__item {
+    position: relative;
     &:not(:last-child) {
       margin-right: 50px;
     }
   }
-}
 
-.menu-nav {
-  &__link--current {
-    color: $logo-color;
-  }
-}
-
-.menu-nav {
-  &__item {
-    position: relative;
-  }
-}
-
-.menu-nav {
   &__link--current {
     &::after {
       position: absolute;
@@ -157,9 +142,7 @@
       fill: $logo-color;
     }
   }
-}
 
-.header-tel-email {
   &__link {
     display: block;
     align-items: center;
@@ -179,9 +162,7 @@
       padding-bottom: 32px;
     }
   }
-}
 
-.header-tel-email {
   &__item + &__item {
     @media screen and (min-width: 1200px) {
       margin-left: 50px;
