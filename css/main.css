@@ -726,7 +726,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu-nav {
-    margin-left: 25px;
+    margin-left: 88px;
   }
 }
 
@@ -812,13 +812,13 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 38px;
+    margin-left: 70px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header-tel-email {
-    margin-left: 150px;
+    margin-left: 240px;
   }
 }
 
