@@ -1,5 +1,11 @@
 /*9portfolio*/
 /*--Портфолио--*/
+.section-projects {
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .filters {
   display: flex;

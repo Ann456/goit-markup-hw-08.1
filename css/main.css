@@ -726,7 +726,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu-nav {
-    margin-left: 88px;
+    margin-left: 25px;
   }
 }
 
@@ -759,8 +759,16 @@ a {
   position: relative;
 }
 
-.menu-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .menu-nav__item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .menu-nav__link--current::after {
@@ -1587,6 +1595,13 @@ a {
 
 /*9portfolio*/
 /*--Портфолио--*/
+@media screen and (max-width: 767px) {
+  .section-projects {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .filters {
   display: -webkit-box;
   display: -ms-flexbox;
