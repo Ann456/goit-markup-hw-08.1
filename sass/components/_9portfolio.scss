@@ -88,10 +88,14 @@
   }
 
   &__item {
-    &:not(:nth-last-child(1)) {
+    &:not(:last-child) {
       @media screen and (max-width: 767px) {
         margin-bottom: 30px;
       }
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 450px;
     }
 
     @media screen and (min-width: 768px) {
