@@ -29,8 +29,20 @@
   top: 50%;
   left: 50%;
 
-  min-width: 617px;
-  min-height: 581px;
+  @media screen and (max-width: 479px) {
+    min-height: 609px;
+    min-width: 350px;
+  }
+
+  @media screen and (min-width: 480px) {
+    min-height: 609px;
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-height: 581px;
+    min-width: 528px;
+  }
 
   background-color: $footer-logo-color;
   box-shadow: 0px 1px 3px $modal-box-shadow1, 0px 1px 1px $modal-box-shadow3,
@@ -39,10 +51,6 @@
 
   transform: translate(-50%, -50%) scale(0.9);
   transition: transform 250ms $timing-function;
-
-  @media screen and(max-width: 1199px) {
-    max-width: 450px;
-  }
 
   &__button {
     position: absolute;
@@ -121,7 +129,7 @@
     margin-top: 4px;
   }
 
-  &__box .last {
+  &__box.last {
     margin-bottom: 0;
   }
 
@@ -223,6 +231,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 480px) {
+      display: flex;
+    }
   }
 
   &__icon {
@@ -257,6 +269,10 @@
     margin-bottom: 0;
 
     color: $tel-color;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+    }
   }
 
   &__link {
@@ -270,6 +286,10 @@
     text-decoration-line: underline;
 
     color: $logo-color;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+    }
   }
 }
 
