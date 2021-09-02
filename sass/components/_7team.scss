@@ -69,11 +69,23 @@
   }
 }
 
+.section-team .social-links {
+  &__item {
+    margin-bottom: 30px;
+  }
+}
+
+.section-team .social-links {
+  &__list {
+    margin-top: 16px;
+  }
+}
+
 .social-links {
   &__list {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+
     list-style: none;
     padding: 0;
   }
