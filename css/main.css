@@ -1671,7 +1671,7 @@ a {
   .filters {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 }
 
@@ -1682,19 +1682,24 @@ a {
             justify-content: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .filters {
-    margin-bottom: 34px;
+    margin-bottom: 50px;
   }
 }
 
-.filters__item:not(:nth-last-child(1)) {
+.filters__item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .filters__item:nth-child(-n + 3) {
+    margin-bottom: 16px;
+  }
 }
 
 .filters__button {
@@ -1743,14 +1748,6 @@ a {
           align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .project {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .project {
     margin: -15px;
@@ -1766,12 +1763,6 @@ a {
 @media screen and (max-width: 767px) {
   .project__item:not(:last-child) {
     margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .project__item {
-    width: 450px;
   }
 }
 
@@ -2101,7 +2092,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .form__input {
-    padding-right: 125px;
+    padding-right: 32px;
     margin-bottom: 0;
   }
 }
