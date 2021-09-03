@@ -2102,7 +2102,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .form__input {
-    padding-right: 125px;
+    padding-right: 120px;
     margin-bottom: 0;
   }
 }
