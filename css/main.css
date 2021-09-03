@@ -2032,10 +2032,6 @@ a {
 }
 
 /*e-mail input*/
-.footer-form {
-  margin-top: 5px;
-}
-
 @media screen and (min-width: 1200px) {
   .footer-form {
     margin-left: 93px;
@@ -2043,6 +2039,7 @@ a {
 }
 
 .footer-form__text {
+  margin-top: 0;
   margin-bottom: 20px;
   font-family: Roboto;
   font-style: normal;
